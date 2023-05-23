@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    width: 1270px;
+    margin: auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+}
+
+
+.content {
+    border: 1px solid red;
+    flex:1;
+    width:30%;
+    box-sizing: border-box;
+    margin: auto 0;
+}
+
+.man {
+    border: 1px solid green;
+    flex:1;
+    width:30%;
+    box-sizing: border-box;
+    margin: auto 0;
+}
+
+.info {
+    border: 1px solid blue;
+    flex:1;
+    width:30%;
+    box-sizing: border-box;
+    margin: auto 0;;
+}
+
+.scrollable-div {
+    width: 200px; /* 필요한 너비 설정 */
+    height: 200px; /* 필요한 높이 설정 */
+    overflow: scroll;
+  }
+.info_body {
+    border: 1px solid yellow;
+    height: 400px;
+    overflow: hidden;
+}
+
+.info_store {
+    border: 1px solid yellow;
+    height: 300px;
+    overflow: hidden;
+}

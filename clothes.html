@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clothes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <img src="" alt="">
+            로고
+        </a>
+    </header>
+    <main>
+        <div class="content">
+        콘텐츠
+            <div class="upload">
+            파일 업로드
+            <input type="file" id="fileUpload" accept='image/*' />
+            <button id="uploadButton">업로드</button>
+                <div class="img_upload">
+                <img id="previewImg" width="300" alt="이미지 영역" />
+                </div>
+            <button class="menuButton" onclick="toggleBox('box1')">박스 1</button>
+            <button class="menuButton" onclick="toggleBox('box2')">박스 2</button>
+            <button class="menuButton" onclick="toggleBox('box3')">박스 3</button>
+
+            <div id="box1" class="contentBox" style="display: none;">
+            <!-- 박스 1 내용 -->
+                <input type="file" id="fileUpload" accept='image/*' />
+                <button id="uploadButton">업로드</button>
+                    <div class="img_upload">
+                        <img id="previewImg" width="300" alt="이미지 영역" />
+                    </div>
+
+            </div>
+
+            <div id="box2" class="contentBox" style="display: none;">
+            <!-- 박스 2 내용 -->
+            <input type="file" id="fileUpload" accept='image/*' />
+            <button id="uploadButton">업로드</button>
+            <div class="img_upload">
+             <img id="previewImg" width="300" alt="이미지 영역" />
+            </div>
+            </div>
+
+            <div id="box3" class="contentBox" style="display: none;">
+            <!-- 박스 3 내용 -->
+            <input type="file" id="fileUpload" accept='image/*' />
+            <button id="uploadButton">업로드</button>
+            <div class="img_upload">
+        <img id="previewImg" width="300" alt="이미지 영역" />
+        </div>
+    
+
+        <div class="image-show" id="image-show"></div>
+        </div>
+            </div>
+        
+        <div class="notice">
+            추천페이지
+            <a href="/">1</a>
+            <a href="/">2</a>
+            <a href="/">3</a>
+            <a href="/">4</a>
+        </div>
+        <div class="warning">경고</div>
+    </div>
+    <div class="man">
+        body
+        <button id="saveButton">저장</button>
+    </div>
+    <div class="info">
+        <div class="scrollable-div">
+            <!-- 내용 -->
+            <div class="info_body">
+                정보를 입력하시오.
+                <form action="/examples/media/request.php">
+                    Height
+                    <input type="text" name="search">
+                  </form>
+                  <form action="/examples/media/request.php">
+                    Weight
+                    <input type="text" name="search">
+                  </form>
+                  <form action="/examples/media/request.php">
+                    Chest
+                    <input type="text" name="search">
+                  </form>
+                  <form action="/examples/media/request.php">
+                    Waist
+                    <input type="text" name="search">
+                  </form>
+                  <form action="/examples/media/request.php">
+                    Hips
+                    <input type="text" name="search">
+                  </form>
+                  <form action="/examples/media/request.php">
+                    Inseam
+                    <input type="text" name="search">
+                  </form>
+                  <form action="/examples/media/request.php">
+                    Exercise
+                    <input type="text" name="search">
+                  </form>
+            </div>
+          </div>
+        <div class="info_body">
+            정보를 입력하시오.
+            <form action="/examples/media/request.php">
+                Height
+                <input type="text" name="search">
+              </form>
+              <form action="/examples/media/request.php">
+                Weight
+                <input type="text" name="search">
+              </form>
+              <form action="/examples/media/request.php">
+                Chest
+                <input type="text" name="search">
+              </form>
+              <form action="/examples/media/request.php">
+                Waist
+                <input type="text" name="search">
+              </form>
+              <form action="/examples/media/request.php">
+                Hips
+                <input type="text" name="search">
+              </form>
+              <form action="/examples/media/request.php">
+                Inseam
+                <input type="text" name="search">
+              </form>
+              <form action="/examples/media/request.php">
+                Exercise
+                <input type="text" name="search">
+              </form>
+        </div>
+        <div class="info_store">
+            이전 결과물
+            <select id="resultSelect">
+                <option value="">결과물 선택</option>
+                <option value="result1">결과물 1</option>
+                <option value="result2">결과물 2</option>
+                <option value="result3">결과물 3</option>
+                <!-- 필요에 따라 추가 결과물을 선택 옵션으로 추가하세요 -->
+              </select>
+              <div id="imageContainer"></div>
+            
+<button id="loadButton">다시 보기</button>
+<div id="imageContainer"></div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
